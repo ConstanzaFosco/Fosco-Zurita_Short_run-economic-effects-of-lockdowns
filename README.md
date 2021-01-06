@@ -1,2 +1,16 @@
 # SIRLabor_SMR_Chile_Covid19
 Contain all the codes, file inputs, and information related to Fosco &amp; Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago metropolitan area.
+
+SIRLaborMPSim.py  (Python) : to replicate the three scenarios S0, S1, S2 of our paper.
+This program contains all the classes, processes, etc. and at the end of it, the parameters setting (prepared for replicating S0 by default).
+It uses two input files, Data1_MP.csv and Data2_MP.csv. Please, locate these files and the program in the same folder.
+Warning: this program delivers outcomes files for each day and realization. 
+The post-processing of the raw data can be done with OutcomeProcessSIRLabor.py. It uses the the file Data2_MP.csv 
+
+Data1_MP.csv contains the estimated probabilities by municipality (comuna) and economic (sector) of working in an essential activity (the initial values).
+Data2_Mp.csv contains 19854 types of agents, the number of each type, and characteristics. The description of each can be found in the paper. 
+
+SIRLaborMPCal.py (Python): to replicate the simulation of several configurations sequentially (used in the first step of the manual calibration).
+It uses four input files: Data1_MP.csv, Data2_MP.csv, RealDCom.csv, RealDRM.csv. The last two files contain real data by comuna (excluding Alhué) 
+of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (excluding Alhué).
+
