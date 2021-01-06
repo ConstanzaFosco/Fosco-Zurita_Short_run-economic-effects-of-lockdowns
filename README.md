@@ -1,6 +1,8 @@
 # SIRLabor_SMR_Chile_Covid19
 Contain all the codes, file inputs, and information related to Fosco &amp; Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago metropolitan area.
 
+It is an ad-hoc simulation model for the Santiago metropolitan region, Chile. It models the coevolution of covid-19 and the effects on the labor market of the mitigation measures adopted between March 1st and August 1st (scenario S0). It also contains two other scenarios (S1 and S2). S1 simulates the counterfactual without any measure, and S2 follows S0 until March 26. On March 27 (morning) when the first targeted lockdown took place in the region (seven comunas), we assume a full lockdown.
+
 SIRLaborMPSim.py  (Python) : to replicate the three scenarios S0, S1, S2 of our paper.
 This program contains all the classes, processes, etc. and at the end of it, the parameters setting (prepared for replicating S0 by default).
 It uses two input files, Data1_MP.csv and Data2_MP.csv. Please, locate these files and the program in the same folder.
