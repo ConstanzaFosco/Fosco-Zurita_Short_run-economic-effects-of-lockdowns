@@ -4,6 +4,7 @@ Contains programs, file inputs, and information related to Fosco &amp; Zurita (2
 
 This is a simulation model applied to the Santiago metropolitan region, Chile. It models the coevolution of covid-19 and the effects on the labor market of the containment measures adopted between March 1st and August 1st (scenario S0). The model is data-driven, with a metapopulation spatial structure, and agent-based.
 Two other scenarios (S1 and S2) can be simulated. S1: a counterfactual without any measure. S2: follows S0 until March 26; on March 27 (morning) when the first targeted lockdown took place in the region (seven comunas), it is assumed a full lockdown instead.
+The information about "cuarentenas" (lockdown) was retrieved from https://github.com/MinCiencia/Datos-COVID19, Product 29.
 
 SIRLaborMPSim.py (main simulation code): to replicate the three scenarios S0, S1, S2 of the paper.
 This program contains all the classes, processes, etc. and at the end of it, the parameters setting (prepared for replicating S0 by default).
@@ -18,9 +19,11 @@ Data1_MP.csv contains the estimated probabilities by municipality (comuna) and e
 
 Data2_MP.csv includes 19584 types of agents, the number of each type, and characteristics. The description of each can be found in the paper. Data elaborated based on the Encuesta Nacional de Empleo, INE, dic. 2019 (https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd), Encuesta Encuesta Suplementaria de Ingresos, INE, 2018 (https://www.ine.cl/estadisticas/sociales/ingresos-y-gastos/encuesta-suplementaria-de-ingresos), Nominal remuneration index (base 2016=100), National according to economic section (CIIU4.CL 2012), monthly, INE (https://stat.ine.cl), Proyecciones de Población, INE (https://www.ine.cl/estadisticas/sociales/demografia-y-vitales/proyecciones-de-poblacion), Census data 2017, INE (https://www.ine.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda).
 
+VariablesData2.csv: brief description of variables included in Data2_MP.csv.
+
 SIRLaborMPCal.py: to replicate the simulation of several configurations sequentially (used in the first step of the manual calibration). The difference with SIRLaborMPSim.py is that the outcomes are only those concerning the calibration process.
 It uses four input files: Data1_MP.csv, Data2_MP.csv, RealDCom.csv, RealDRM.csv. The last two files contain real data by comuna (excluding Alhué) 
-of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (excluding Alhué) (retrieved from https://github.com/MinCiencia/Datos-COVID19, Nov 03 2020).
+of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (excluding Alhué) (retrieved from https://github.com/MinCiencia/Datos-COVID19, Nov 03 2020, Product 15).
 
 Municipalities.csv: the list of municipalities (comunas) and their id as spatial units.
 
