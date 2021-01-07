@@ -1,6 +1,7 @@
 # SIRLabor_SMR_Chile_Covid19
 
-Contains programs, file inputs, and information related to Fosco &amp; Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago metropolitan area.
+Constanza Fosco &amp; Felipe Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago metropolitan area.
+Programs, input files, and relevant information to replicate the results.
 
 This is a simulation model applied to the Santiago metropolitan region, Chile. It models the coevolution of covid-19 and the effects on the labor market of the containment measures adopted between March 1st and August 1st (scenario S0). The model is data-driven, with a metapopulation spatial structure, and agent-based.
 Two other scenarios (S1 and S2) can be simulated. S1: a counterfactual without any measure. S2: follows S0 until March 26; on March 27 (morning) when the first targeted lockdown took place in the region (seven comunas), it is assumed a full lockdown instead.
