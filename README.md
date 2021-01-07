@@ -14,5 +14,5 @@ Data2_Mp.csv contains 19854 types of agents, the number of each type, and charac
 
 SIRLaborMPCal.py (Python): to replicate the simulation of several configurations sequentially (used in the first step of the manual calibration).
 It uses four input files: Data1_MP.csv, Data2_MP.csv, RealDCom.csv, RealDRM.csv. The last two files contain real data by comuna (excluding Alhué) 
-of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (excluding Alhué).
+of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (excluding Alhué) (from Retrieved from https://github.com/MinCiencia/Datos-COVID19, Nov 03 2020).
 
