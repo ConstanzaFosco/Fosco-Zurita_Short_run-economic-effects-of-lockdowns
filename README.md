@@ -10,7 +10,7 @@ Warning: this program delivers outcomes files for each day and realization.
 The post-processing of the raw data can be done with OutcomeProcessSIRLabor.py. It uses the the file Data2_MP.csv 
 
 Data1_MP.csv contains the estimated probabilities by municipality (comuna) and economic (sector) of working in an essential activity (the initial values).
-Data2_Mp.csv contains 19854 types of agents, the number of each type, and characteristics. The description of each can be found in the paper. 
+Data2_Mp.csv contains 19854 types of agents, the number of each type, and characteristics. The description of each can be found in the paper. Data elaborated from Encuesta Nacional de Empleo dic. 2019 (https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd).
 
 SIRLaborMPCal.py (Python): to replicate the simulation of several configurations sequentially (used in the first step of the manual calibration).
 It uses four input files: Data1_MP.csv, Data2_MP.csv, RealDCom.csv, RealDRM.csv. The last two files contain real data by comuna (excluding Alhué) 
