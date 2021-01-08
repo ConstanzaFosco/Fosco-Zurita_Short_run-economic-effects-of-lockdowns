@@ -13,11 +13,11 @@ This program contains all the classes, processes, etc. and at the end of it, the
 Requires two input files, Data1_MP.csv and Data2_MP.csv. Please, locate these files and the program in the same folder.
 The program delivers one outcome file for each day and realization. Each file "SX_rea_u_day_v.csv" (X=scenario, u=number of realization, v=day simulated)
 contains a matrix of dimension (19584,9). Each row represent (in order) a type of agent (see the description of Data2_MP.csv below). Columns are the number
-of agents in the compartiments {susceptible, infected, removed}x{not working, working on-site, teleworking}.
+of agents in the compartiments {not working, working on-site, teleworking}x{susceptible, infected, removed}.
 The post-processing of the raw data can be done with **OutcomeProcessSIRLabor.py**. It requires the the file Data2_MP.csv and links the raw outcome to the full set
 of characteristics.
 
-**Data1_MP.csv** contains the estimated probabilities by municipality (comuna) and economic sector of working in an essential activity -- own elaboration, based on the official definitions of Chilean authorities (Instructivo Cuarentena) and firms statistics by municipality (https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html --.
+**Data1_MP.csv** contains the estimated probabilities by municipality (comuna) and economic sector of working in an essential activity - own elaboration, based on the official definitions of Chilean authorities (Instructivo Cuarentena) and firms statistics by municipality (https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html).
 
 **Data2_MP.csv** includes 19584 types of agents, the number of each type, and characteristics. The description of each can be found in the paper. Data elaborated based on the Encuesta Nacional de Empleo, INE, dic. 2019 (https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd), Encuesta Encuesta Suplementaria de Ingresos, INE, 2018 (https://www.ine.cl/estadisticas/sociales/ingresos-y-gastos/encuesta-suplementaria-de-ingresos), Nominal remuneration index (base 2016=100), National according to economic section (CIIU4.CL 2012), monthly, INE (https://stat.ine.cl), Proyecciones de Población, INE (https://www.ine.cl/estadisticas/sociales/demografia-y-vitales/proyecciones-de-poblacion), Census data 2017, INE (https://www.ine.cl/estadisticas/sociales/censos-de-poblacion-y-vivienda/poblacion-y-vivienda).
 
