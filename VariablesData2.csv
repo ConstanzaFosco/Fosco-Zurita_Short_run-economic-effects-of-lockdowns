@@ -23,3 +23,4 @@ TrabajaEnRM,=1 if workplace is in SMR (excludes comm=3)
 Commuter,"=1 if comm=1,2"
 group,"major group ISCO classification (manager, professional, technicians and associate professionals, ...)"
 place,"place of work (office, other home, own home, street, construction/mines/agriculture sites, other places, not applicable)"
+gender, "=1 male, =2 female"
