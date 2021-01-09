@@ -1,0 +1,25 @@
+variable,description
+nragt,number of agents of this type
+CUTh,municipality of residence (id spatial unit)
+comm,"=0 non-commuter, 1,2,3 commuters (intra, inter, outside SMR)"
+activ,"=0,1,2,3 : children, employed, unemployed, inactive"
+ident,id of agent type
+age,17 intervals
+educ,"=1,2,3,4,5,99 educational level (very low, low, medium, high, very high)"
+jornada,"full-time (1), part-time (2)"
+jobcat,job category
+rama,"economic sector (section level, 2 digits)"
+telew,signals if the employed is able to telework (own elaboration)
+sector,employer (firm) formality 
+CUTw,municipality of work (id spatial unit)
+idrph,id survey
+income,"monthly wage, own elaboration "
+forml,job formality
+risk,signals if the employed is at risk of not being paid 
+DailyIncome,"daily wage (monthly, actualized to March 2020 / 30.5)"
+WactualizationFactor,factor of wage actualization
+ACTIVOS,"=1 if active = 1, o.w. =0"
+TrabajaEnRM,=1 if workplace is in SMR (excludes comm=3)
+Commuter,"=1 if comm=1,2"
+group,"major group ISCO classification (manager, professional, technicians and associate professionals, ...)"
+place,"place of work (office, other home, own home, street, construction/mines/agriculture sites, other places, not applicable)"
