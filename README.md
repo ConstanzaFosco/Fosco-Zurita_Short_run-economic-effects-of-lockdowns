@@ -33,4 +33,6 @@ of cumulative cases, 22 epidemiological weeks, and cumulative cases for SRM (exc
 
 **CalibrationAll.zip**: explanation and outcomes of the two calibration steps (not automatic).
 
+**Simulation_Rt_CaseReproductive.zip**: includes SIRLaborMP_Rt.py, a version of the main programm that allows to count secondary cases per each primary case, outcomes, and random seeds to replicate.
+
 Simulation software: **Python 3.7.6**, within the Anaconda open-source distribution package (https://docs.anaconda.com/). 
