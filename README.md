@@ -1,6 +1,6 @@
 # SIRLabor_SMR_Chile_Covid19
 
-# Constanza Fosco &amp; Felipe Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago metropolitan area.
+# Constanza Fosco &amp; Felipe Zurita (2021) - Assessing the short-run effects of lockdown policies on economic activity, with an application to the Santiago Metropolitan Region, Chile.
 
 **Programs, input files, and relevant information to replicate the results.**
 
