@@ -14,7 +14,7 @@ Requires two input files, Data1_MP.csv and Data2_MP.csv. Please, locate these fi
 The program delivers one outcome file for each day and realization. Each file "SX_rea_u_day_v.csv" (X=scenario, u=number of realization, v=day simulated)
 contains a matrix of dimension (19584,9). Each row represent (in order) a type of agent (see the description of Data2_MP.csv below). Columns are the number
 of agents in the compartiments {not working, working on-site, teleworking}x{susceptible, infected, removed}.
-The post-processing of the raw data can be done with **OutcomeProcessSIRLabor.py**. It requires the the file Data2_MP.csv and links the raw outcome to the full set
+The post-processing of the raw data can be done with **OutcomeProcessSIRLabor.py**. It requires the file Data2_MP.csv and links the raw outcome to the full set
 of characteristics.
 
 **Data1_MP.csv** contains the estimated probabilities by municipality (comuna) and economic sector of working in an essential activity - own elaboration, based on the official definitions of Chilean authorities (Instructivo Cuarentena) and firms statistics by municipality (https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html).
