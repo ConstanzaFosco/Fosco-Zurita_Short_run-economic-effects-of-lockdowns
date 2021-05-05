@@ -8,7 +8,7 @@ This is a simulation model applied to the Santiago metropolitan region, Chile. I
 Two other scenarios (S1 and S2) can be simulated. S1: a counterfactual without any measure. S2: follows S0 until March 26; on March 27 (morning) when the first targeted lockdown took place in the region (seven comunas), it is assumed a full lockdown instead.
 The information about "cuarentenas" (lockdown) was retrieved from https://github.com/MinCiencia/Datos-COVID19, Product 29.
 
-**SIRLaborMPSim.py** (main simulation code): to simulate the three scenarios S0, S1, S2 of the paper.
+**SIRLaborMP.py** for simulating the three scenarios S0, S1, S2 of the paper.
 This program contains all the classes, processes, etc. and at the end of it, the parameters setting.
 Requires two input files, Data1_MP.csv and Data2_MP.csv. Please, locate these files and the program in the same folder.
 The program delivers one outcome file for each day and realization. Each file "SX_rea_u_day_v.csv" (X=scenario, u=number of realization, v=day simulated)
@@ -25,10 +25,10 @@ of characteristics.
 
 **Municipalities.csv**: the list of municipalities (comunas) and their id as spatial units.
 
-**Scenarios S0_S1_S2.zip**: main processed outcomes of each scenario. 
+**Scenarios S0_S1_S2 Outcomes.zip**: processed outcomes of each scenario. 
 
-**CalibrationAll.zip**: explanation and outcomes of the two calibration steps (not automatic).
+**Calibration Outcomes.zip**: explanation and outcomes of the two calibration steps (not automatic).
 
-**Simulation_Rt_CaseReproductive.zip**: includes SIRLaborMP_Rt.py, a version of the main programm that allows to count secondary cases per each primary case; outcomes for S0.
+**Rt_CaseReproductive Outcomes.zip**: outcomes of effective (case) reproductive number, includes a variant of the main code that allows for the counting of secondary cases.
 
 Simulation software: **Python 3.7.6**, within the Anaconda open-source distribution package (https://docs.anaconda.com/). 
